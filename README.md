@@ -8,7 +8,6 @@ The game was built using Unity Engine. Play the game from https://bisniskomodo.i
 
 ## 👤Developer
 - Nicholas Van Lukman (Game Programmer)
-- Kezia Pricillia Ong (Game Artist)
 <br>
 
 ## 📂Files description
