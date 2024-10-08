@@ -1,9 +1,9 @@
 ## 🔴About
-Lightning boy remains as my first simple game, inspired by Super Mario Bros where you gotta jump and avoid obstacle in order to reach to your winning places. I built the player movement system, Climbing System, Healthcontroller and the kill system for the player when falling to lava or touch nearby obstacle. Here's a small portion details about Lightning Boy development presented
+Please Survive, 2D top down shooter that rush yourself to a zombie apocalypse that keep spawning. You gotta kill them in order to survive the world. Each kills grant you score that makes the game even harder. I formulated a simple zombie enemy behavior, shooting scripts, Scoring system, animation system, gun system, and also the Healthcontroller. Here's a small portion details about Lightning Boy development presented
 <br>
 
 ## 🕹️Play Game
-The game was built using Unity Engine. Play the game from https://bisniskomodo.itch.io/lightning-boy. 
+The game was built using Unity Engine. Play the game from https://bisniskomodo.itch.io/please-survive. 
 <br>
 
 ## 👤Developer
