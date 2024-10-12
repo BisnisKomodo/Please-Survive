@@ -35,73 +35,31 @@ The game was built using Unity Engine. Play the game from https://bisniskomodo.i
 ```
 <br>
 
-## 📜Please Survive Scripts Example (EnemyMovement)
-```
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+<br>
 
-public class EnemyMovement : MonoBehaviour
-{
-    [SerializeField] private float speed;
-    [SerializeField] private float rotationspeed;
-    private Rigidbody2D rb2d;
-    private ZombieSense playerAwarenessController;
-    private Vector2 targetDirection;
-    private float ChangeDirectionCooldown;
-    private void Awake()
-    {
-        rb2d = GetComponent<Rigidbody2D>();
-        playerAwarenessController = GetComponent<ZombieSense>();
-        targetDirection = transform.up;
-    }
-    private void FixedUpdate()
-    {
-        UpdateTargetDirection();
-        RotateTowardsTarget();
-        SetVelocity();
-    }
+## 🕹️Game controls
 
-    private void UpdateTargetDirection()
-    {
-        HandleRandomTargetDirection();
-        HandlePlayerTargeting();
-    }
+The following controls are bound in-game, for gameplay and testing.
 
-    private void HandleRandomTargetDirection()
-    {
-        ChangeDirectionCooldown -= Time.deltaTime;
-        if (ChangeDirectionCooldown <= 0)
-        {
-            float anglechange = Random.Range(-90f, 90f);
-            Quaternion rotation = Quaternion.AngleAxis(anglechange, transform.forward);
-            targetDirection = rotation * targetDirection;
+| Key Binding       | Function          |
+| ----------------- | ----------------- |
+| W,A,S,D           | Standard movement |
+| Left Click             | Shooting              |
+| Space             | Dash           |
 
-            ChangeDirectionCooldown = Random.Range(1f, 2f);
-        }
-    }
+<br>
 
-    private void HandlePlayerTargeting()
-    {
-        if (playerAwarenessController.AwareOfPlayer)
-        {
-            targetDirection = playerAwarenessController.DirectionToPlayer;
-        }
-    }
+##  📜Scripts and Features
 
-    private void RotateTowardsTarget()
-    {
+Top down shooter game as majority of game you found else where using simple scripting behavior for simple game. Some of the scripts are presented as follow
 
-        Quaternion targetRotation = Quaternion.LookRotation(transform.forward, targetDirection);
-        Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationspeed * Time.deltaTime);
+|  Script       | Description                                                  |
+| ------------------- | ------------------------------------------------------------ |
+| `HealthController.cs` | Responsible for the enemy health and also the player health |
+| `PlayerDamagedInvincibility.cs` | Responsible for the invincible effect using coroutines |
+| `EnemyMovement.cs`  | Responsible for the enemy ai behavior works in the game |
+| `Collectables.cs`  | Responsible every item dropped by killing the zombies |
+| `etc`  | |
 
-        rb2d.SetRotation(rotation);
-    }
+<br>
 
-    private void SetVelocity()
-    {
-        
-         rb2d.velocity = transform.up * speed;
-    }
-}
-```
