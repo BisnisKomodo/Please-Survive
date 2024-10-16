@@ -1,3 +1,32 @@
+<table>
+  <tr>
+    <td align="left" width="50%">
+      <img width="100%" alt="gif1" src="https://github.com/user-attachments/assets/2982a55d-ac57-40c0-9010-ed431de9b782">
+    </td>
+    <td align="right" width="50%">
+      <img width="100%" alt="gif2" src="https://github.com/user-attachments/assets/49d16639-7622-4fa7-b6a7-2ec435449b3b">
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img width="100%" alt="gif3" src="https://github.com/user-attachments/assets/1274a738-69dc-473f-8461-51d5d0efe947">
+</p>
+
+##  📜Scripts and Features
+
+Top down shooter game as majority of game you found else where using simple scripting behavior for simple game. Some of the scripts are presented as follow
+
+|  Script       | Description                                                  |
+| ------------------- | ------------------------------------------------------------ |
+| `HealthController.cs` | Responsible for the enemy health and also the player health |
+| `PlayerDamagedInvincibility.cs` | Responsible for the invincible effect using coroutines |
+| `EnemyMovement.cs`  | Responsible for the enemy ai behavior works in the game |
+| `Collectables.cs`  | Responsible every item dropped by killing the zombies |
+| `etc`  | |
+
+<br>
+
 ## 🔴About
 Please Survive, 2D top down shooter that rush yourself to a zombie apocalypse that keep spawning. You gotta kill them in order to survive the world. Each kills grant you score that makes the game even harder. I formulated a simple zombie enemy behavior, shooting scripts, Scoring system, animation system, gun system, and also the Healthcontroller. Here's a small portion details about Lightning Boy development presented
 <br>
@@ -46,20 +75,6 @@ The following controls are bound in-game, for gameplay and testing.
 | W,A,S,D           | Standard movement |
 | Left Click             | Shooting              |
 | Space             | Dash           |
-
-<br>
-
-##  📜Scripts and Features
-
-Top down shooter game as majority of game you found else where using simple scripting behavior for simple game. Some of the scripts are presented as follow
-
-|  Script       | Description                                                  |
-| ------------------- | ------------------------------------------------------------ |
-| `HealthController.cs` | Responsible for the enemy health and also the player health |
-| `PlayerDamagedInvincibility.cs` | Responsible for the invincible effect using coroutines |
-| `EnemyMovement.cs`  | Responsible for the enemy ai behavior works in the game |
-| `Collectables.cs`  | Responsible every item dropped by killing the zombies |
-| `etc`  | |
 
 <br>
 
