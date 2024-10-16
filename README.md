@@ -10,8 +10,9 @@
 </table>
 
 <p align="center">
-  <img width="100%" alt="gif3" src="https://github.com/user-attachments/assets/1274a738-69dc-473f-8461-51d5d0efe947">
+  <img width="100%" alt="gif3" src="https://github.com/user-attachments/assets/97b3c6ca-2e88-4c4c-b3c7-e7f79d3dbfb9">
 </p>
+
 
 ##  📜Scripts and Features
 
